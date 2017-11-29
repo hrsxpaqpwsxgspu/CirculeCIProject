@@ -3,12 +3,18 @@ jobs:
   build:
     working_directory: ~/test_folder
     docker:
-      - image: microsoft/windowsservercore
-      #- image: mongo:3.4.4
+      - image: circleci/node:4.8.2
+      - image: mongo:3.4.4
     steps:
       - checkout
       - run:
           name: run dir
           command: dir
+      - run:
+          name: get ps core
+          command: sudo dpkg -i powershell_6.0.0-rc-1.ubuntu.16.04_amd64.deb -f
+      - run:
+          name: get ps core
+          command: sudo apt-get install -f
 
 
