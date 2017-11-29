@@ -8,5 +8,7 @@ jobs:
     steps:
       - checkout
       - run:
+          name: run dir
+          command: dir
 
 
