@@ -9,6 +9,6 @@ jobs:
       - checkout
       - run:
           name: run dir
-          command: powershell Get-Help AzureRM
+          command: pwsh
 
 
