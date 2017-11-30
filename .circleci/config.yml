@@ -9,6 +9,6 @@ jobs:
       - checkout
       - run:
           name: run dir
-          command: get-date
+          command: Get-Help AzureRM
 
 
