@@ -4,7 +4,7 @@ jobs:
     working_directory: ~/platform #Here is the answer
     docker:
       - image: cimg/base:stable
-      - image: cimg/python:3.7
+      #- image: cimg/python:3.7
     steps:
       - checkout:
           path: ~/platform #Here is the answer
@@ -13,8 +13,8 @@ jobs:
           command: |
             lscpu
             #pip install colab_ssh
-            python3 -m pip install --upgrade pip
-            pip3 install colab_ssh
+            #python3 -m pip install --upgrade pip
+            #pip3 install colab_ssh
       - run:
           name: Install dependencies
           command: |
