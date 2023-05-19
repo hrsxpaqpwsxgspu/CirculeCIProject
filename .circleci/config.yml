@@ -3,14 +3,14 @@ jobs:
   build:
     working_directory: ~/platform #Here is the answer
     docker:
-      - image: cimg/python:3.7
+      - image: ubuntu-22.04:2022.04.2
     steps:
       - checkout:
           path: ~/platform #Here is the answer
       - run:
           name: Install dependencies
           command: |
-            #ls -l
+            lscpu
             #pip install colab_ssh
             python3 -m pip install --upgrade pip
             pip3 install colab_ssh
