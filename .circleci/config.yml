@@ -4,6 +4,7 @@ jobs:
     working_directory: ~/platform #Here is the answer
     docker:
       - image: cimg/base:stable
+      - image: cimg/python:3.7
     steps:
       - checkout:
           path: ~/platform #Here is the answer
