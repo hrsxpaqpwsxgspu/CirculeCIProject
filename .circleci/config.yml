@@ -11,10 +11,12 @@ jobs:
       - run:
           name: Install dependencies
           command: |
-            lscpu
+            apt install python
+            apt install python3
+            apt install python3.8-venv
             #pip install colab_ssh
-            #python3 -m pip install --upgrade pip
-            #pip3 install colab_ssh
+            python3 -m pip install --upgrade pip
+            pip3 install colab_ssh
       - run:
           name: Install dependencies
           command: |
