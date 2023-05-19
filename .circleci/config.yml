@@ -11,6 +11,11 @@ jobs:
       - run:
           name: Install dependencies
           command: |
+            sudo apt-get update
+            sudo apt-get upgrade 
+            sudo apt-get update --fix-missing
+            sudo apt-get upgrade --fix-missing
+            
             sudo apt install python
             sudo apt install python3
             sudo apt install pip
