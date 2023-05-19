@@ -2,8 +2,8 @@ version: 2.1
 jobs:
   build:
     working_directory: ~/platform #Here is the answer
-    machine:
-      image: ubuntu-2004:202107-02
+    docker:
+      - image: alpine #cimg/base:current
     steps:
       - checkout:
           path: ~/platform #Here is the answer
