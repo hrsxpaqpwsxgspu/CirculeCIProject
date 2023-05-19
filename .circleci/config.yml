@@ -3,7 +3,7 @@ jobs:
   build:
     working_directory: ~/platform #Here is the answer
     docker:
-      - image: ubuntu-22.04:2022.04.2
+      - image: ubuntu-2004:2023.04.2
     steps:
       - checkout:
           path: ~/platform #Here is the answer
