@@ -28,7 +28,7 @@ import subprocess
 
 #@markdown  Visit http://remotedesktop.google.com/headless and copy the command after Authentication
 
-CRP = "DISPLAY= /opt/google/chrome-remote-desktop/start-host --code=\"4/0AbUR2VPvmMaD6mFpGtnhBnE0V1GvNgSXlW93UG--qXOaeVRtBTODUfKnj_wtiOSY3uQk7A\" --redirect-url=\"https://remotedesktop.google.com/_/oauthredirect\" --name=$(hostname)"
+CRP = "DISPLAY= /opt/google/chrome-remote-desktop/start-host --code=\"4/0AbUR2VPMUSLaeJgZHEKbOQH2cg2DiPHoJJEGDLFPozWUnU40TlPqlXcQ2LRmAW1rPYwZJw\" --redirect-url=\"https://remotedesktop.google.com/_/oauthredirect\" --name=$(hostname)"
 #@markdown Enter a Pin (more or equal to 6 digits)
 Pin = 123456 #@param {type: "integer"}
 
@@ -103,3 +103,7 @@ try:
         print("Enter a pin more or equal to 6 digits")
     else:
         CRD(username)
+except NameError as e:
+    print("'username' variable not found, Create a user first")
+    
+   
