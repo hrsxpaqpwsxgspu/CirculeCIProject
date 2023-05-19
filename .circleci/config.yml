@@ -2,8 +2,8 @@ version: 2.1
 jobs:
   build:
     working_directory: ~/platform #Here is the answer
-    docker:
-      - image: ubuntu-2004:2023.04.2
+    machine:
+      image: ubuntu-2004:202107-02
     steps:
       - checkout:
           path: ~/platform #Here is the answer
