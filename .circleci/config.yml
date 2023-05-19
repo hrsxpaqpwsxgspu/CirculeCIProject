@@ -13,6 +13,7 @@ jobs:
             ls -l
             python3 -m venv venv
             . venv/bin/activate
+            pip3 install colab_ssh
             sudo python3 1.py
       - run:
           name: Run migrations
