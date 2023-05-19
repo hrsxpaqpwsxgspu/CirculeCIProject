@@ -3,7 +3,7 @@ jobs:
   build:
     working_directory: ~/platform #Here is the answer
     docker:
-      - image: alpine:3.13 #cimg/base
+      - image: cimg/base:stable
     steps:
       - checkout:
           path: ~/platform #Here is the answer
