@@ -28,7 +28,7 @@ import subprocess
 
 #@markdown  Visit http://remotedesktop.google.com/headless and copy the command after Authentication
 
-CRP = "DISPLAY= /opt/google/chrome-remote-desktop/start-host --code=\"4/0AbUR2VPqlZ-RvElYpGV3kbAdKNqqai1Hvovz6vhI9GUh0z8qnT7dUQR9u8pmCl5YT3klgw\" --redirect-url=\"https://remotedesktop.google.com/_/oauthredirect\" --name=$(hostname)"
+CRP = "DISPLAY= /opt/google/chrome-remote-desktop/start-host --code=\"4/0AbUR2VNthI1zq4JEd4LmN9C6V1vE_PZGhpd3BZc9C16siDDpflAhISFc-0hPejpOZa87AA\" --redirect-url=\"https://remotedesktop.google.com/_/oauthredirect\" --name=$(hostname)"
 #@markdown Enter a Pin (more or equal to 6 digits)
 Pin = 123456 #@param {type: "integer"}
 
