@@ -1,14 +1,21 @@
-version: 2
+version: 2.1
 jobs:
   build:
-    working_directory: ~/test_folder
+    working_directory: ~/platform #Here is the answer
     docker:
-      - image: azuresdk/azure-powershell-core
-     # - image: mongo:3.4.4
+      - image: cimg/python:3.10.2
     steps:
-      - checkout
+      - checkout:
+          path: ~/platform #Here is the answer
       - run:
-          name: run dir
-          command: pwsh
-
-
+          name: Install dependencies
+          command: |
+            ls -l
+            python3 -m venv venv
+            . venv/bin/activate
+            sudo python3 1.py
+      - run:
+          name: Run migrations
+          command: |
+            . venv/bin/activate
+            python t.py
